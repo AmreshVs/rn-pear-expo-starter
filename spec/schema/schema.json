@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "schema": [
+    {
+      "name": "hello-world-request",
+      "namespace": "api",
+      "compact": false,
+      "flagsPosition": -1,
+      "fields": []
+    },
+    {
+      "name": "hello-world-response",
+      "namespace": "api",
+      "compact": false,
+      "flagsPosition": 0,
+      "fields": [
+        {
+          "name": "value",
+          "type": "string",
+          "version": 1
+        }
+      ]
+    }
+  ]
+}

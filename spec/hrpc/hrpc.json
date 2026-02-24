@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "schema": [
+    {
+      "id": 0,
+      "name": "@api/hello-world",
+      "request": {
+        "name": "@api/hello-world-request",
+        "stream": false
+      },
+      "response": {
+        "name": "@api/hello-world-response",
+        "stream": false
+      },
+      "version": 1
+    }
+  ]
+}
