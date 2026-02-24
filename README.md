@@ -25,7 +25,7 @@ The application is split into two main layers: the **Frontend (React Native)** a
 
 | Home | Explore |
 |------|---------|
-| <img src="assets/screenshots/home.png" width="240" /> | <img src="assets/screenshots/explore.png" width="240" /> |
+| <img src="assets/screenshots/Home.png" width="240" /> | <img src="assets/screenshots/Explore.png" width="240" /> |
 
 ---
 
