@@ -253,18 +253,18 @@ async function run() {
   if (isCleanUI) {
     const templatePath = path.join(rootDir, 'scripts/templates/index.tsx.template')
     if (fs.existsSync(templatePath)) {
-      fs.copyFileSync(templatePath, path.join(rootDir, 'app/(tabs)/index.tsx'))
-      console.log('Updated app/(tabs)/index.tsx with generic template')
+      fs.copyFileSync(templatePath, path.join(rootDir, 'src/app/index.tsx'))
+      console.log('Updated src/app/index.tsx with generic template')
     }
     // Also remove secondary tab if it exists
-    const tabTwoPath = path.join(rootDir, 'app/(tabs)/two.tsx')
+    const tabTwoPath = path.join(rootDir, 'src/app/explore.tsx')
     if (fs.existsSync(tabTwoPath)) {
       fs.unlinkSync(tabTwoPath)
-      console.log('Removed app/(tabs)/two.tsx')
+      console.log('Removed src/app/explore.tsx')
     }
   } else {
     replaceInFile(
-      'app/(tabs)/index.tsx',
+      'src/app/index.tsx',
       /<Text style={styles\.title}>.*?<\/Text>/,
       `<Text style={styles.title}>${newName}</Text>`,
     )
